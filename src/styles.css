@@ -1,27 +1,28 @@
+@import 'tailwindcss';
+@config '../tailwind.config.js';
+
 :root {
   color-scheme: dark;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-html {
-  scroll-behavior: smooth;
-}
+  body {
+    min-height: 100vh;
+    background: #05030a;
+  }
 
-body {
-  min-height: 100vh;
-  background: #05030a;
-}
+  * {
+    letter-spacing: 0;
+  }
 
-* {
-  letter-spacing: 0;
-}
-
-button,
-a {
-  letter-spacing: 0;
+  button,
+  a {
+    letter-spacing: 0;
+  }
 }
 
 #toast {
