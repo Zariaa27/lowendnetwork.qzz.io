@@ -1,0 +1,39 @@
+:root {
+  color-scheme: dark;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: #05030a;
+}
+
+* {
+  letter-spacing: 0;
+}
+
+button,
+a {
+  letter-spacing: 0;
+}
+
+#toast {
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+#toast.hidden {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+#toast:not(.hidden) {
+  opacity: 1;
+  transform: translateY(0);
+}
